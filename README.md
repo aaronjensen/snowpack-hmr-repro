@@ -1,25 +1,11 @@
-# New Project
+# Repro
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+1. Run `yarn install`
+2. Run `yarn start`
+3. Open `http://localhost:8080`
+4. Increment the number in `src/bubble.tsx`
+5. Observe the number increment in the browser
+6. Increment the number in the comment in `src/guide.tsx`
 
-## Available Scripts
-
-### npm start
-
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like "@snowpack/plugin-webpack" to your `snowpack.config.js` config file.
-
-### npm test
-
-Launches the application test runner.
-Run with the `--watch` flag (`npm test -- --watch`) to run in interactive watch mode.
+Expected: No changes in the browser
+Actual: The bubble number reverts to the previous number
